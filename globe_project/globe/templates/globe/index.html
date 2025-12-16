@@ -3,6 +3,9 @@
   <head>
     {% load static %}
     <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157/examples/js/controls/OrbitControls.js"></script>
+    {% comment %} <script type="module" src="globe/js/globe.js"></script> {% endcomment %}
     <title>Earth Globe</title>
     <style>
       body {
@@ -56,8 +59,6 @@
       <ul id="markerList"></ul>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/three@0.157/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.157/examples/js/controls/OrbitControls.js"></script>
 
     {% comment %} I need to fix this shit {% comment %} {% endcomment %}
     <script src="{% static 'globe/js/globe.js' %}"></script>
