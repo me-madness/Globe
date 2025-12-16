@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earth Globe</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #000; }
+    #ui {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.7);
+      padding: 10px;
+      color: white;
+      font-family: Arial;
+      border-radius: 8px;
+    }
+    input { width: 80px; }
+  </style>
+</head>
+<body>
+
+<div id="ui">
+  <div>
+    Lat: <input id="lat" type="number" step="0.01">
+    Lon: <input id="lon" type="number" step="0.01">
+  </div>
+  <button onclick="addMarker()">Add Marker</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.157/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.157/examples/js/controls/OrbitControls.js"></script>
+
+
+{% comment %} I need to fix this shit {% endcomment %}
+{% comment %} <script src="{% static 'globe/js/globe.js' %}"></script> {% endcomment %}
+
+</body>
+</html>
